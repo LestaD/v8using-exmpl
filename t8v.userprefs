@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="useglob/useglob.cproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="useglob/main.cpp">
+    <Files>
+      <File FileName="useglob/main.cpp" Line="2" Column="2" />
+      <File FileName="useglob/javascript.js" Line="4" Column="4" />
+      <File FileName="include/v8.h" Line="33" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="useglob" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

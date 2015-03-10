@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9033825F-6456-4202-BB0A-7D0DC9FCD9E9}</ProjectGuid>
+    <Compiler>
+      <Compiler ctype="GppCompiler" />
+    </Compiler>
+    <Language>CPP</Language>
+    <Target>Bin</Target>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <Externalconsole>true</Externalconsole>
+    <OutputName>useglob</OutputName>
+    <CompileTarget>Bin</CompileTarget>
+    <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+    <Includes>
+      <Includes>
+        <Include>/home/lestad/projects/t8v</Include>
+      </Includes>
+    </Includes>
+    <OptimizationLevel>1</OptimizationLevel>
+    <Libs>
+      <Libs>
+        <Lib>v8_base</Lib>
+        <Lib>v8_libbase</Lib>
+        <Lib>v8_libplatform</Lib>
+        <Lib>v8_snapshot</Lib>
+        <Lib>icui18n</Lib>
+        <Lib>icuuc</Lib>
+      </Libs>
+    </Libs>
+    <ExtraCompilerArguments>-std=c++0x</ExtraCompilerArguments>
+    <ExtraLinkerArguments>-Wl,-rpath=/home/lestad/projects/t8v/libs  -lpthread</ExtraLinkerArguments>
+    <LibPaths>
+      <LibPaths>
+        <LibPath>/home/lestad/projects/t8v/libs</LibPath>
+      </LibPaths>
+    </LibPaths>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="/home/lestad/projects/t8v/build.sh" workingdir="/home/lestad/projects/t8v/" externalConsole="True" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <Externalconsole>true</Externalconsole>
+    <OutputName>useglob</OutputName>
+    <CompileTarget>Bin</CompileTarget>
+    <OptimizationLevel>3</OptimizationLevel>
+    <DefineSymbols>MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="javascript.js" />
+  </ItemGroup>
+</Project>
